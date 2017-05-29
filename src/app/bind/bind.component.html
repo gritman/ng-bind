@@ -1,6 +1,10 @@
 <p>
   bind works!
 </p>
+<div>
+  <input [value]="name" (input)="doOnInput($event)">
+  {{name}}
+</div>
 <div [ngStyle]="multiStyle">
   测试CSS
 </div>

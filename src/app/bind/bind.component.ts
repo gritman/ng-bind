@@ -28,13 +28,13 @@ export class BindComponent implements OnInit {
     background: 'yellow'
   };
 
+  name: string; // 测试双向绑定
+
   constructor() {
-    setTimeout( () => {
-        this.multiStyle = {
-          color: 'yellow',
-          background: 'red'
-        };
-      }, 3000
+    setInterval( () => {
+        this.name = 'Tom';
+      },
+      3000
     );
   }
 
@@ -47,8 +47,7 @@ export class BindComponent implements OnInit {
   }
 
   doOnInput(event: any) {
-    console.log(event.target.value); // 打印DOM属性
-    console.log(event.target.getAttribute('value')); // 打印HTML属性,只显示初始值,后面不会变
+    this.name = event.target.value;
   }
 
 }
