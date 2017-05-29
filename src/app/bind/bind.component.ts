@@ -9,6 +9,8 @@ export class BindComponent implements OnInit {
 
   imgUrl: string = 'http://placehold.it/400x320';
 
+  size = 2;
+
   constructor() { }
 
   ngOnInit() {
