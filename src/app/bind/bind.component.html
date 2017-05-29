@@ -2,7 +2,9 @@
   bind works!
 </p>
 <div>
-  <input [value]="name" (input)="doOnInput($event)">
+  <!-- ngModel用在不同的标签上会处理不同的事件 -->
+  <!-- ngModel要用在可以交互的标签上,不要用在div label这种展示的属性 -->
+  <input [(ngModel)]="name">
   {{name}}
 </div>
 <div [ngStyle]="multiStyle">
