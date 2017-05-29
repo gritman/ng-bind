@@ -19,4 +19,9 @@ export class BindComponent implements OnInit {
     console.log(event);
   }
 
+  doOnInput(event: any) {
+    console.log(event.target.value); // 打印DOM属性
+    console.log(event.target.getAttribute('value')); // 打印HTML属性,只显示初始值,后面不会变
+  }
+
 }
