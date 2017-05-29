@@ -23,9 +23,17 @@ export class BindComponent implements OnInit {
 
   isDev = true;
 
+  multiStyle = {
+    color: 'red',
+    background: 'yellow'
+  };
+
   constructor() {
     setTimeout( () => {
-        this.isDev = false;
+        this.multiStyle = {
+          color: 'yellow',
+          background: 'red'
+        };
       }, 3000
     );
   }
