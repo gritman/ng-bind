@@ -7,15 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindComponent implements OnInit {
 
-  imgUrl: string = 'http://placehold.it/400x320';
+  imgUrl = 'http://placehold.it/400x320';
 
   size = 2;
 
   divClass: string;
 
+  isBig = false;
+
   constructor() {
     setTimeout( () => {
-        this.divClass = 'a b c';
+        this.isBig = true;
       }, 3000
     );
   }
