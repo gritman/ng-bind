@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindComponent implements OnInit {
 
+  imgUrl: string = 'http://placehold.it/400x320';
+
   constructor() { }
 
   ngOnInit() {

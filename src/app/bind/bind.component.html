@@ -1,4 +1,11 @@
 <p>
   bind works!
 </p>
-<button (click)="doOnClick($event)">点我</button>
+<div>
+  <button (click)="doOnClick($event)">点我</button>
+</div>
+<div>
+  <!-- 下面两种写法等效,推荐第二种,NG会把第二种编译成第一种 -->
+  <img [src]="imgUrl">
+  <img src="{{imgUrl}}">
+</div>
