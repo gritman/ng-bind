@@ -6,6 +6,8 @@
 </div>
 <div>
   <input value="Tom" (input)="doOnInput($event)">
+  <!-- HTML属性设置成false没用,必须修改DOM属性 -->
+  <button disabled="false">点我</button>
 </div>
 <div>
   <!-- 下面两种写法等效,推荐第二种,NG会把第二种编译成第一种 -->
