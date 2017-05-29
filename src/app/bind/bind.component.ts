@@ -15,9 +15,19 @@ export class BindComponent implements OnInit {
 
   isBig = false;
 
+  multiClass = {
+    a: false,
+    b: false,
+    c: false
+  };
+
   constructor() {
     setTimeout( () => {
-        this.isBig = true;
+        this.multiClass = {
+          a: true,
+          b: true,
+          c: true
+        };
       }, 3000
     );
   }
