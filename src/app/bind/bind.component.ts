@@ -11,7 +11,14 @@ export class BindComponent implements OnInit {
 
   size = 2;
 
-  constructor() { }
+  divClass: string;
+
+  constructor() {
+    setTimeout( () => {
+        this.divClass = 'a b c';
+      }, 3000
+    );
+  }
 
   ngOnInit() {
   }
