@@ -12,4 +12,9 @@ export class BindComponent implements OnInit {
   ngOnInit() {
   }
 
+  // 此处的event是MouseEvent事件,看target属性是button,target属性里有innerHTML
+  doOnClick(event: any) {
+    console.log(event);
+  }
+
 }
