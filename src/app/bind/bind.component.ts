@@ -21,13 +21,11 @@ export class BindComponent implements OnInit {
     c: false
   };
 
+  isDev = true;
+
   constructor() {
     setTimeout( () => {
-        this.multiClass = {
-          a: true,
-          b: true,
-          c: true
-        };
+        this.isDev = false;
       }, 3000
     );
   }
